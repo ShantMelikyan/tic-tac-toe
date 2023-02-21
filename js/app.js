@@ -89,23 +89,21 @@ const App = {
           App.state.moves.length === 0
             ? 1
             : getOppositePlayer(lastMove.playerID);
-        const nextPlayer =getOppositePlayer(currentPlayer);
-        const turnLabel = document.createElement('p');
-
+        const nextPlayer = getOppositePlayer(currentPlayer);
+        const turnLabel = document.createElement("p");
 
         const squareIcon = document.createElement("i");
         const turnIcon = document.createElement("i");
-        turnLabel.innerText = `Player ${nextPlayer} you are up!`
+        turnLabel.innerText = `Player ${nextPlayer} you are up!`;
 
         if (currentPlayer === 1) {
-            squareIcon.classList.add("fa-solid", "fa-x", "yellow");
-            turnIcon.classList.add("fa-solid", "fa-o", "turquoise");
-            turnLabel.classList = 'turquoise'
-            
+          squareIcon.classList.add("fa-solid", "fa-x", "yellow");
+          turnIcon.classList.add("fa-solid", "fa-o", "turquoise");
+          turnLabel.classList = "turquoise";
         } else {
-            squareIcon.classList.add("fa-solid", "fa-o", "turquoise");
-            turnIcon.classList.add("fa-solid", "fa-x", "yellow");
-            turnLabel.classList = 'yellow'
+          squareIcon.classList.add("fa-solid", "fa-o", "turquoise");
+          turnIcon.classList.add("fa-solid", "fa-x", "yellow");
+          turnLabel.classList = "yellow";
         }
 
         App.$.turn.replaceChildren(turnIcon, turnLabel);
