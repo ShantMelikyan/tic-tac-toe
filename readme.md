@@ -1,5 +1,5 @@
 # Tic Tac Toe
-![alt text](https://github.com/ShantMelikyan/tic-tac-toe/blob/main/tic-tac-toe.PNG?raw=true) 
+![alt text](https://github.com/ShantMelikyan/tic-tac-toe/blob/master/tic-tac-toe.PNG?raw=true) 
 
 This is Tic Tac Toe game built with VanillaJS, HTML, CSS. The game is played on a 3x3 grid. Players take turns placing their marks (X or O) on the grid. 
 The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins the game.
